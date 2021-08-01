@@ -9,6 +9,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: laravel_app
+    restart: unless-stopped
     ports: 
       - "8001:80"
     volumes:
